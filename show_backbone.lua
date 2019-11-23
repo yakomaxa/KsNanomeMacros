@@ -34,5 +34,6 @@ function main ()
     Command_ShowRibbons(true);
     Command_SetAtomsBondsRender("sticks+balls");
     Command_ShowResidueLabels(true);
+    Command_ColoringRibbons("rainbow", Color_RGB(0, 0, 255),Color_RGB(255, 0, 0));
     return "Success: Backbone + CB atoms are shown ";
 end
