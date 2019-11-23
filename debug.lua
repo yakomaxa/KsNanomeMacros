@@ -5,11 +5,11 @@ This macro colors red and white
 ]]
 
 function main ()
-    currentSelection = Selection_GetAtoms();
-    Command_ShowRibbons(true);
+   -- currentSelection = Selection_GetAtoms();
+    --Command_ShowRibbons(true);
     total = List_Length(Selection_GetResidue());
-    residues = Selection_GetResidues();
-    Selection_Clear();
+    --residues = Selection_GetResidues();
+    --Selection_Clear();
     return total;
 --    for idx, residue in List_Pairs(residues) do
 --        Selection_Change("add", residue);
