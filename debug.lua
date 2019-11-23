@@ -5,10 +5,21 @@ This macro colors red and white
 ]]
 
 function main ()
- Selection_All()
- count=0
+ Selection_All();
+ Command_ShowAtomsBonds(false);
  Command_ShowRibbons(false);
- residues=Selection_GetResidues()
+ Command_ShowSurfaces(false);
+ Command_ShowWaters(false);
+ Command_ShowHydrogens(false);
+ Command_ShowAtomLabels(false);
+ Command_ShowResidueLabels(false);
+ Command_ShowHetAtomsBonds(false);
+ Command_ShowHetSurfaces(false);
+ Selection_Clear();
+
+ count=0
+ --residues=Search_GetResidues(">>> N");
+ residues = Search_GetResidues(" > A > ");
  Command_ShowRibbons(true);
  for residue in residues do
   Selection_Change("add", residue)
