@@ -9,6 +9,6 @@ function main ()
  chainA=Search_GetResidues(" > A > ");
  Selection_Change("add", chainA);
  Selection_Change("remove", Search_GetResidues(">> HOH"));
- total = List_Length(Selection_Atoms());
+ total = List_Length(Selection_GetAtoms());
  return total .. "atoms"
 end
