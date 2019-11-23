@@ -9,8 +9,8 @@ function main ()
  count=0
  Command_ShowRibbons(false);
  residues=Selection_GetResidues()
+ Command_ShowRibbons(true);
  for residue in residues do
-
   Selection_Change("add", residue)
   count=count+1;
   if (count < 30) then
