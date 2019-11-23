@@ -5,12 +5,12 @@ This macro colors red and white
 ]]
 
 function main ()
-   -- currentSelection = Selection_GetAtoms();
+    -- currentSelection = Selection_GetAtoms();
     --Command_ShowRibbons(true);
     --total = List_Length(Selection_GetResidue());
     --residues = Selection_GetResidues();
     --Selection_Clear();
-    return 1;
+    return "yes";
 --    for idx, residue in List_Pairs(residues) do
 --        Selection_Change("add", residue);
 --        if (idx < total/2) then
