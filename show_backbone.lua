@@ -5,7 +5,6 @@
 ]]
 
 function main ()
-    Command_Load("1MBN", "PDB", "HTTP", "https://files.rcsb.org/download/1MBN.pdb");
     Selection_All();
     Command_ShowAtomsBonds(false);
     Command_ShowRibbons(false);
@@ -33,5 +32,6 @@ function main ()
     Command_ShowRibbons(true);
     Command_ShowResidueLabels(false);
     Command_SetAtomsBondsRender("sticks+balls");
+    Command_ShowResidueLabels(true);
     return "Success: Backbone + CB atoms are shown ";
 end
