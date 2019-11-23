@@ -37,11 +37,11 @@ function main ()
    b=2*(total-count)
    --Command_ColoringRibbons("mono", Color_RGB(0, 0, 255));
   end
-  rn=math.floor(r*225/total)
-  gn=math.floor(g*255/total)
-  bn=math.floor(b*225/total)
-  Command_ColoringRibbons("mono", Color_RGB(rn, gn, bn));
-  --Command_ColoringRibbons("mono", Color_RGB(0, 100, 0));
+  --rn=math.floor(r*225/total)
+  --gn=math.floor(g*255/total)
+  --bn=math.floor(b*225/total)
+  --Command_ColoringRibbons("mono", Color_RGB(rn, gn, bn));
+  Command_ColoringRibbons("mono", Color_RGB(0, 100, 0));
   Selection_Change("remove", residue)
  end
  Selection_Clear()
