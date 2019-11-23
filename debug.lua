@@ -20,7 +20,8 @@ function main ()
  count=0
  --residues=Search_GetResidues(">>> N");
  residues = Search_GetResidues(" > A > ");
- total = List_Length(residues);
+ --total = List_Length(residues);
+ total=100
  --Command_ShowRibbons(true);
  for residue in residues do
   Selection_Change("add", residue)
