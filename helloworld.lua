@@ -3,5 +3,6 @@
 ]]
 function main ()
  Command_Notification("Hello world, my first macro!");
+ Command_Notification(math.floor(101.05));
  return "SUCCESS";
 end;
