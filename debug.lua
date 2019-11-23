@@ -20,7 +20,7 @@ function main ()
  count=0
  --residues=Search_GetResidues(">>> N");
  residues = Search_GetResidues(" > A > ");
- Command_ShowRibbons(true);
+ --Command_ShowRibbons(true);
  for residue in residues do
   Selection_Change("add", residue)
   count=count+1;
@@ -31,6 +31,7 @@ function main ()
   end
   Selection_Change("remove", residue)
  end
+ Selection_Clear()
  Selection_All()
  Command_ShowRibbons(true);
 
