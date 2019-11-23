@@ -10,7 +10,7 @@ function main ()
  --Selection_Change("add", chainA);
  --Selection_Change("remove", Search_GetResidues(">> HOH"));
  --total = List_Length(Selection_GetAtoms(chain));
-   residues = List_Iterator(Chain_GetResidues(chain))
+   residues = Chain_GetResidues(chain)
    for residue in residues do
     if Residue_GetName(residue) ~= "HOH" then
      print("HOH")
