@@ -19,6 +19,7 @@ function main ()
  ---Selection_Change("add", residue)
  ---count=count+1;
  ---if (count < 30) then
+ Selection_All();
  Command_ColoringRibbons("mono", Color_RGB(255, 255, 255));
   --   else
 --      Command_ColoringRibbons("mono", Color_RGB(255, 0, 0));
