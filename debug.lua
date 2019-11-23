@@ -5,7 +5,7 @@ This macro colors red and white
 ]]
 
 function main ()
- Selection_Clear();
+ --Selection_Clear();
  --residues=Search_GetResidues(" > A > ");
  --Selection_Change("add", chainA);
  --Selection_Change("remove", Search_GetResidues(">> HOH"));
