@@ -25,5 +25,5 @@ function main ()
      end
     end
    end
-   return total .. "residues"
+   --return total .. "residues"
 end
