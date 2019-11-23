@@ -10,12 +10,8 @@ function main ()
  --Selection_Change("add", chainA);
  --Selection_Change("remove", Search_GetResidues(">> HOH"));
  --total = List_Length(Selection_GetAtoms(chain));
- for complex in List_Iterator(Workspace_GetComplexes()) do
-  molecule = Complex_GetCurrentMolecule(complex);
-  for chain in List_Iterator(Molecule_GetChains(molecule)) do
-   --total = List_Length(Selection_GetAtoms(chain));
-   count=0
-   for residue in List_Iterator(Chain_GetResidues(chain)) do
+   residues = List_Iterator(Chain_GetResidues(chain))
+   for residue in residues do
     if Residue_GetName(residue) ~= "HOH" then
      print("HOH")
     else
@@ -30,6 +26,4 @@ function main ()
     end
    end
    return total .. "residues"
-  end
- end
 end
