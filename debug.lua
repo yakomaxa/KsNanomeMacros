@@ -7,7 +7,7 @@ This macro colors red and white
 function main ()
  Selection_Clear();
  residues=Search_GetResidues(" > A > ");
- residues = Chain_GetResidues(chain)
+ --residues = Chain_GetResidues(chain)
  count=0
  Command_ShowRibbons(false);
  for residue in residues do
