@@ -20,15 +20,24 @@ function main ()
  count=0
  --residues=Search_GetResidues(">>> N");
  residues = Search_GetResidues(" > A > ");
+ total = List_Length(residues);
  --Command_ShowRibbons(true);
  for residue in residues do
   Selection_Change("add", residue)
   count=count+1;
-  if (count < 30) then
-   Command_ColoringRibbons("mono", Color_RGB(255, 255, 255));
+  if (count < total/2) then
+   r=count*2
+   g=count*2
+   b=total
   else
-   Command_ColoringRibbons("mono", Color_RGB(0, 0, 255));
+   r=total
+   g=2*(total-count)
+   b=2*(total-count)
   end
+  rn=math.floor(r*225/total)
+  gn=math.floor(g*255/total)
+  bn=math.floor(b*225/total)
+  Command_ColoringRibbons("mono", Color_RGB(rn, gn, bn));
   Selection_Change("remove", residue)
  end
  Selection_Clear()
