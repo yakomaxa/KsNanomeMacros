@@ -5,6 +5,7 @@ This macro colors red and white
 ]]
 
 function main ()
- return "YES"
+ total = List_Length(Selection_GetResidue());
+ return total
 end
 
