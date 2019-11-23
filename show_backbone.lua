@@ -26,17 +26,13 @@ function main ()
     Selection_Change("add", N);
     Selection_Change("add", CA);
     Selection_Change("add", C);
-    Selection_Change("add", O);    
+    Selection_Change("add", O);
+    Selection_Change("add", CB);
+    Selection_Change("remove", Search_GetResidues(">> HOH"));
 
     Command_ShowAtomsBonds(true);
     Command_ShowRibbons(true);
-    Command_ShowResidueLabels(false);
     Command_SetAtomsBondsRender("sticks+balls");
     Command_ShowResidueLabels(true);
-    for atom in Selection_GetAtoms() do
-       c=Atom_GetPosition(atom)
-       Command_Notification(c);
-    end;
-   
     return "Success: Backbone + CB atoms are shown ";
 end
