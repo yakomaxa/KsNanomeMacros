@@ -40,7 +40,7 @@ function main ()
   --rn=math.floor(r*225/total)
   --gn=math.floor(g*255/total)
   --bn=math.floor(b*225/total)
-  Command_ColoringRibbons("mono", Color_RGB(r, g, b));
+  --Command_ColoringRibbons("mono", Color_RGB(r, g, b));
   --Command_ColoringRibbons("mono", Color_RGB(0, 100, 0));
   Selection_Change("remove", residue)
  end
