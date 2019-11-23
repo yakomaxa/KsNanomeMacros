@@ -33,5 +33,10 @@ function main ()
     Command_ShowResidueLabels(false);
     Command_SetAtomsBondsRender("sticks+balls");
     Command_ShowResidueLabels(true);
+    for atom in Selection_GetAtoms() do
+       c=Atom_GetPosition(atom)
+       Command_Notification(c);
+    end;
+   
     return "Success: Backbone + CB atoms are shown ";
 end
