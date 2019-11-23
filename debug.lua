@@ -31,6 +31,7 @@ function main ()
   end
   Selection_Change("remove", residue)
  end
+ Selection_All()
  Command_ShowRibbons(true);
 
 end
