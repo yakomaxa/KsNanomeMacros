@@ -26,7 +26,7 @@ function main ()
  for residue in residues do
   Selection_Change("add", residue)
   count=count+1;
-  if (count < total/2) then
+  if (count < 30) then
    r=count*2
    g=count*2
    b=total
