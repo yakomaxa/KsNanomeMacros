@@ -32,6 +32,6 @@ function main ()
     Command_ShowAtomsBonds(true);
     Command_ShowRibbons(true);
     Command_ShowResidueLabels(false);
-    Command_SetAtomsBondsRender("sticks");
+    Command_SetAtomsBondsRender("sticks+balls");
     return "Success: Backbone + CB atoms are shown ";
 end
