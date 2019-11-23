@@ -1,6 +1,6 @@
 --[[
 
-This macro colors red and white
+This macro colors the cartoon by the gradient from blue-white-red. Better for me than usual rainbow using green in middle.
 
 ]]
 
