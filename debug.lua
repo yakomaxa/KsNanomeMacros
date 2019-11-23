@@ -22,7 +22,8 @@ function main ()
     else
      Selection_Clear();
      Selection_Change("add", residue);
-     if (idx < total/2) then
+     count=count+1;
+     if (count < total/2) then
       Command_ColoringRibbons("mono", Color_RGB(255, 255, 255));
      else
       Command_ColoringRibbons("mono", Color_RGB(255, 0, 0));
