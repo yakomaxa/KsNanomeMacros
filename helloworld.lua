@@ -29,20 +29,20 @@ function main ()
 
   count=count+1;
   if (count < total/2) then
-   r=count*2
-   g=count*2
-   b=total
+   r=count*2/total
+   g=count*2/total
+   b=1
    --Command_ColoringRibbons("mono", Color_RGB(255, 255, 255));
   else
-   r=total
-   g=2*(total-count)
-   b=2*(total-count)
+   r=1
+   g=2*(total-count)/total
+   b=2*(total-count)/total
    --Command_ColoringRibbons("mono", Color_RGB(0, 0, 255));
   end
-  rn=r*(255/total)
-  gn=g*(255/total)
-  bn=b*(255/total)
-  Command_ColoringRibbons("mono", Color_RGB(r, g, b));
+  rn=r*255
+  gn=g*255
+  bn=b*255
+  Command_ColoringRibbons("mono", Color_RGB(rn, gn, bn));
   --Command_ColoringRibbons("mono", Color_RGB(0, 100, 0));
   Selection_Change("remove", residue)
  end
