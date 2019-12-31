@@ -1,6 +1,6 @@
 --[[
 
-This macro colors red and white
+This macro colors chain A in blue-white-red gradient
 
 ]]
 
